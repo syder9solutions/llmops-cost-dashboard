@@ -5,8 +5,11 @@ gateway** that traces every call end-to-end, attributes **cost per request /
 feature / user**, tracks **latency percentiles (p50/p95)** and TTFT, serves
 **exact + semantic caching**, runs **alerting** on cost/latency/error
 regressions, and renders a **zero-dependency HTML dashboard** — then uses all
-of it to move a real number: **caching cut cost/1k requests 28–64% and p95
-latency up to 47%** on a live workload.
+of it to move a real number: **the semantic cache cut cost/1k requests 84.4%
+and p95 latency 60.3%** on a live workload (the cross-stage `$/1k` delta mixes
+model tiers — see the comparability caveat below; cache hit-rate and p95 are
+the primary evidence). These figures come from `evals/report.json` and are
+checked against the README by `tests/test_readme_consistency.py`.
 
 ## Architecture
 
