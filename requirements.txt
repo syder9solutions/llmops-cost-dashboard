@@ -1,0 +1,7 @@
+# installed via uv into .venv (see README / reproduction)
+fastapi
+uvicorn[standard]
+httpx
+pytest
+numpy
+python-multipart

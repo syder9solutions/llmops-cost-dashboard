@@ -1,0 +1,43 @@
+{
+ "arms": {
+  "exact_only": {
+   "cache_hits": 6,
+   "cache_mode": "exact-only",
+   "cost_per_1k": 0.049517,
+   "cost_usd_total": 0.003961,
+   "errors": 36,
+   "exact_hits": 6,
+   "hit_rate": 0.075,
+   "live_calls": 38,
+   "mean_ms": 4369.5,
+   "p50_ms": 3189.905469000223,
+   "p95_ms": 11529.370884993114,
+   "requests": 80,
+   "semantic_hits": 0,
+   "tokens_in": 30466,
+   "tokens_out": 2287,
+   "wall_s": 222.7
+  },
+  "semantic": {
+   "cache_hits": 36,
+   "cache_mode": "on",
+   "cost_per_1k": 0.028691,
+   "cost_usd_total": 0.002295,
+   "errors": 22,
+   "exact_hits": 5,
+   "hit_rate": 0.45,
+   "live_calls": 22,
+   "mean_ms": 1532.5,
+   "p50_ms": 1.6625050047878176,
+   "p95_ms": 5837.528385003679,
+   "requests": 80,
+   "semantic_hits": 31,
+   "tokens_in": 17657,
+   "tokens_out": 1324,
+   "wall_s": 110.9
+  }
+ },
+ "model": "gemini/gemini-3.1-flash-lite",
+ "n": 80,
+ "phase": "cache_ab"
+}

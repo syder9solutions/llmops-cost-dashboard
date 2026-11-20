@@ -1,0 +1,57 @@
+{
+ "n_per_strategy": 40,
+ "phase": "ablation",
+ "strategies": {
+  "blended": {
+   "cache_hits": 0,
+   "cost_per_1k": 0.0,
+   "cost_usd_total": 0,
+   "errors": 40,
+   "exact_hits": 0,
+   "hit_rate": 0.0,
+   "live_calls": 0,
+   "mean_ms": null,
+   "p50_ms": null,
+   "p95_ms": null,
+   "requests": 40,
+   "semantic_hits": 0,
+   "tokens_in": 0,
+   "tokens_out": 0,
+   "wall_s": 126.9
+  },
+  "economy": {
+   "cache_hits": 0,
+   "cost_per_1k": 0.0,
+   "cost_usd_total": 0,
+   "errors": 40,
+   "exact_hits": 0,
+   "hit_rate": 0.0,
+   "live_calls": 0,
+   "mean_ms": null,
+   "p50_ms": null,
+   "p95_ms": null,
+   "requests": 40,
+   "semantic_hits": 0,
+   "tokens_in": 0,
+   "tokens_out": 0,
+   "wall_s": 128.3
+  },
+  "strong_only": {
+   "cache_hits": 8,
+   "cost_per_1k": 0.018182,
+   "cost_usd_total": 0.000727,
+   "errors": 25,
+   "exact_hits": 0,
+   "hit_rate": 0.2,
+   "live_calls": 7,
+   "mean_ms": 1924.8,
+   "p50_ms": 1.5090609958861023,
+   "p95_ms": 9153.057107992936,
+   "requests": 40,
+   "semantic_hits": 8,
+   "tokens_in": 5581,
+   "tokens_out": 423,
+   "wall_s": 92.3
+  }
+ }
+}

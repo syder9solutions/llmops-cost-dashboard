@@ -1,0 +1,20 @@
+{
+ "cache_hits": 0,
+ "cache_mode": "off",
+ "cost_per_1k": 0.184256,
+ "cost_usd_total": 0.036851,
+ "errors": 5,
+ "exact_hits": 0,
+ "hit_rate": 0.0,
+ "live_calls": 195,
+ "mean_ms": 5172.6,
+ "model": "groq/openai/gpt-oss-120b",
+ "p50_ms": 3773.4817229938926,
+ "p95_ms": 14693.63584301027,
+ "phase": "baseline",
+ "requests": 200,
+ "semantic_hits": 0,
+ "tokens_in": 131480,
+ "tokens_out": 22839,
+ "wall_s": 543.9
+}

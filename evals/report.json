@@ -1,0 +1,65 @@
+{
+ "alert_rules": {
+  "budget_burn": {
+   "false_alarm_rate_steady": 0.0167,
+   "fire_rate_on_regression": 1.0
+  },
+  "cache_hit_rate_collapse": {
+   "false_alarm_rate_steady": 0.0,
+   "fire_rate_on_regression": 1.0
+  },
+  "cost_spike": {
+   "false_alarm_rate_steady": 0.1667,
+   "fire_rate_on_regression": 1.0
+  },
+  "error_rate_jump": {
+   "false_alarm_rate_steady": 0.0,
+   "fire_rate_on_regression": 1.0
+  },
+  "output_drift": {
+   "false_alarm_rate_steady": 0.0083,
+   "fire_rate_on_regression": 1.0
+  },
+  "p95_latency_drift": {
+   "false_alarm_rate_steady": 0.0,
+   "fire_rate_on_regression": 1.0
+  }
+ },
+ "excluded": [
+  {
+   "change": "+ cheap-model routing",
+   "errors": 40,
+   "note": "model tiers converged on gemini due to gateway quota",
+   "reason": "no successful calls",
+   "requests": 40
+  }
+ ],
+ "headline": [
+  {
+   "cache_hit_rate": 0.0,
+   "change": "baseline (tracing only)",
+   "cost_per_1k_usd": 0.1843,
+   "model": "groq/openai/gpt-oss-120b",
+   "p95_ms": 14694.0
+  },
+  {
+   "cache_hit_rate": 0.075,
+   "change": "+ exact cache",
+   "cost_per_1k_usd": 0.0495,
+   "model": "gemini/gemini-3.1-flash-lite",
+   "p95_ms": 11529.0
+  },
+  {
+   "cache_hit_rate": 0.45,
+   "change": "+ semantic cache",
+   "cost_per_1k_usd": 0.0287,
+   "model": "gemini/gemini-3.1-flash-lite",
+   "p95_ms": 5838.0
+  }
+ ],
+ "savings_vs_baseline": {
+  "cost_pct": 84.4,
+  "p95_pct": 60.3
+ },
+ "semantic_quality": null
+}

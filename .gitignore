@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+data/traces.db*
+data/traces_test.db*
+.env
+evals/results/*.local.json
