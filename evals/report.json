@@ -25,6 +25,7 @@
    "fire_rate_on_regression": 1.0
   }
  },
+ "comparability_note": "Baseline ran on groq/openai/gpt-oss-120b; cache arms ran on gemini/gemini-3.1-flash-lite after the shared gateway's groq org quota was exhausted. Both use exact per-model pricing from src/pricing.py, but cross-stage cost deltas mix model tiers: treat the cache hit-rate and p95 changes as the primary evidence, and the $/1k delta as indicative only.",
  "excluded": [
   {
    "change": "+ cheap-model routing",
