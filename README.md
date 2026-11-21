@@ -1,4 +1,4 @@
-# Project 12 — LLMOps Cost & Latency Dashboard
+# LLMOps Cost & Latency Dashboard
 
 A self-contained LLMOps observability control plane: a ** LiteLLM-style LLM
 gateway** that traces every call end-to-end, attributes **cost per request /
