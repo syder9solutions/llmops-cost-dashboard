@@ -2,7 +2,7 @@
 # Full eval pipeline, sequential phases. One client at a time (shared throttle).
 # Each phase writes its JSON artifact; a phase's nonzero exit (small residual
 # provider error budget) is recorded but does NOT abort the remaining phases.
-cd . || exit 1
+cd "$(dirname "$0")" || exit 1
 export PYTHONPATH=""
 PHASES="baseline cache_ab ablation alert_eval cost_audit report"
 
